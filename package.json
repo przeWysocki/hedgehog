@@ -1,0 +1,24 @@
+{
+  "name": "hedgehog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx node-sass -w scss/index.scss index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/przeWysocki/hedgehog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/przeWysocki/hedgehog/issues"
+  },
+  "homepage": "https://github.com/przeWysocki/hedgehog#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
