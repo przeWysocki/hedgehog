@@ -25,7 +25,8 @@ body {
     text-shadow: 8px 8px 16px black;
     font-family: 'Itim', cursive;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    z-index: 1000; }
 
 .first {
   background-image: url(../img/sonic_banner.jpg);
@@ -38,9 +39,43 @@ body {
   flex-direction: column; }
 
 .george {
-  height: 100vh; }
+  width: 100%;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428); }
+  .george__article {
+    margin: 32px auto;
+    width: 100%; }
+  .george__big-heading {
+    text-align: center;
+    font-size: 54px;
+    margin: 32px 0 16px 0;
+    border-radius: 100% 0% 77% 23%/0% 52% 48% 100%;
+    border: 2px dashed white; }
+  .george__small-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 0 16px 0; }
+  .george__paragraph {
+    max-width: 400px;
+    padding: 16px;
+    margin-left: 32px;
+    margin-top: 52px;
+    font-size: 24px; }
   .george__photo {
-    max-width: 400px; }
+    max-width: 400px;
+    padding: 16px;
+    border-radius: 71% 29% 70% 30% / 30% 70% 30% 70%;
+    margin-right: 32px;
+    margin-top: 52px;
+    border: 2px dashed white; }
+  .george__flex {
+    display: flex;
+    flex-direction: row;
+    margin: 16px auto;
+    align-items: center;
+    justify-content: center; }
 
 .header__image {
   width: 64px;
@@ -51,7 +86,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  backdrop-filter: blur(20px); }
+  backdrop-filter: blur(20px);
+  z-index: 2000; }
 
 .navigation {
   height: 60px;
@@ -66,11 +102,19 @@ body {
     padding: 0 16px 0 22px;
     display: inline-block;
     color: #241d1b;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #ffffff,-3px 4px 0px #f0f0f0,4px -3px 0px #0f00b2; }
 
-section {
-  height: 100vh;
-  width: 100%; }
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+  text-transform: uppercase;
+  font-family: 'Itim', cursive;
+  color: white; }
 
 .sonic-speaks {
   width: 300px;

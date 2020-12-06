@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gramy w Sonica</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body id="top">
-    <div class="first">
-    <header class="header__navigation">
-      <img class="header__image" src="img/button__top.png" alt="Przycisk w górę ze zdjęciem Sonica"> 
-      <nav class="navigation">
-        <a class="navigation__link" href="#top">Strona główna</a> 
-        <a class="navigation__link" href="#george">Jerzy</a>
-        <a class="navigation__link" href="#sonic">Sonic</a>
-        <a class="navigation__link" href="#games">Gry</a>
-        <a class="navigation__link" href="#cat">Felosz</a>
-      </nav> 
-    </header>
-  <header class="banner">
-    <h1 class="banner__text">Jerzy i Sonicowe przygody</h1>
-   </header>
-   <div class ="sonic-speaks"></div>
-  </div>
-    <main>
-      <section class="george" id="george">
-        <h2 class="george__heading">Cześć jestem Jerzy</h2>
-      <p class="george__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iure temporibus 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gramy w Sonica</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="top">
+        <div class="first">
+            <header class="header__navigation">
+                <img class="header__image" src="img/button__top.png" alt="Przycisk w górę ze zdjęciem Sonica">
+                <nav class="navigation">
+                    <a class="navigation__link" href="#top">Strona główna</a>
+                    <a class="navigation__link" href="#george">Jerzy</a>
+                    <a class="navigation__link" href="#sonic">Sonic</a>
+                    <a class="navigation__link" href="#games">Gry</a>
+                    <a class="navigation__link" href="#cat">Felosz</a>
+                </nav>
+            </header>
+            <header class="banner">
+                <h1 class="banner__text">Jerzy i Sonicowe przygody</h1>
+            </header>
+            <div class="sonic-speaks"></div>
+        </div>
+        <main>
+            <section class="george section" id="george">
+                <h2 class="george__big-heading">Cześć, jestem Jerzy</h2>
+                <article class="george__article">
+                  <h3 class="george__small-heading">Mam 5 lat. Ćwiczę Karte, lubię układać klocki LEGO i grać w gry.</h3>
+                  <div class="george__flex">
+                  <img class="george__photo" src="img/george__photo.jpg" alt="moje zdjęcie">
+                  <p class="george__paragraph">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iure temporibus 
         nesciunt veritatis adipisci expedita dolor placeat velit porro natus, in, reiciendis 
         dolorum sit eaque quia doloremque. Sit, eos dolorem.
-      </p>
-      <img class="george__photo" src="img/george__photo.jpg" alt="moje zdjęcie">
-      </section>
-      <section class="sonic" id="sonic">
-        <h2>Sonic the hedgehog</h2>
-        <p class="sonic__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis 
+                    </p>
+                </div>
+                </article>
+            </section>
+            <section class="sonic section" id="sonic">
+                <h2>Sonic the hedgehog</h2>
+                <p class="sonic__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis 
           ratione dolore repellendus! Quidem tempora quisquam, rerum impedit laboriosam, mollitia eos libero 
-          illum error adipisci aspernatur odit hic ad at?</p>
-        <img class="sonic__photo" src="" alt="">
-      </section>
-      <section class="games" id="games">
-        <h2>Gry w które gram:</h2>
-        <div class="games__first"></div>
-        <div class="games__second"></div>
-        <div class="games__third"></div>
-        <div class="games__fourth"></div>
-      </section>
-      <section class="cat" id="cat">
-        <img class="cat__photo" src="" alt="">
-        <button class="cat__button">Kliknij, by kot zaczął mówić</button>
-        <p class="cat__talks"></p> 
-      </section>
-    </main>
-    <footer>All rights reserved &#169 2020-2021</footer>
-  <!-- 
+          illum error adipisci aspernatur odit hic ad at?
+                </p>
+                <img class="sonic__photo" src="" alt="">
+            </section>
+            <section class="games section" id="games">
+                <h2>Gry w które gram:</h2>
+                <div class="games__first"></div>
+                <div class="games__second"></div>
+                <div class="games__third"></div>
+                <div class="games__fourth"></div>
+            </section>
+            <section class="cat section" id="cat">
+                <h2>Oto Felosz - mój ulubiony kot</h2>
+                <img class="cat__photo" src="" alt="">
+                <button class="cat__button">Kliknij, by kot zaczął mówić</button>
+                <p class="cat__talks"></p>
+            </section>
+        </main>
+        <footer>All rights reserved &#169 2020-2021</footer>
+        <!-- 
  
 ---zakładka gry będzie miała odwracane karty z jednej strony nazwa gry, z drugiej po kliknięciu grafika z gry-logo lub obraz jakiś   
 
@@ -70,7 +78,5 @@ i sprawdzi czy "true" jeśli tak wyświetli komunikat "brawo". Chyba z inner.htm
 
 
 -->
-  
-  
-  </body>
+    </body>
 </html>
