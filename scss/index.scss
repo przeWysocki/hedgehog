@@ -35,8 +35,29 @@ body {
     text-align:center;
     margin:0;
     z-index:1000;
+    text-shadow:3px 3px 3px #2661d8,4px -3px 0px #0f00b2;
 }
 }
+
+.button-up {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    cursor:pointer;
+    text-shadow: none;
+    text-decoration:none;
+    //visibility: hidden;
+&__image {
+    width:64px;
+    margin:16px;
+&:hover {
+    transform: scale(1.5);
+}
+}
+
+
+}
+
 
 .first {
     background-image: url(../img/sonic_banner.jpg);
@@ -54,6 +75,7 @@ body {
     background: #000428; 
     background: -webkit-linear-gradient(to right, #004e92, #000428); 
     background: linear-gradient(to right, #004e92, #000428); 
+    text-shadow:3px 3px 3px #2661d8,4px -3px 0px #0f00b2;
     
     &__article {
         margin:32px auto;
@@ -66,6 +88,7 @@ body {
         margin:32px 0 16px 0;
        border-radius: 100% 0% 77% 23%/0% 52% 48% 100%;
        border:2px dashed white;
+       
     }
     &__small-heading {
         width:100%;
@@ -102,10 +125,7 @@ body {
     }
 
     
-.header__image {
-    width:64px;
-   margin:16px;
-}
+
 
 .header__navigation {
     display:flex;
@@ -134,10 +154,13 @@ main {
         cursor:pointer;
         padding:0 16px 0 22px; 
         display:inline-block;
-        color:#241d1b;
+        color:#ffffff;
         text-transform: uppercase;
-        text-shadow:1px 0px 2px #ffffff,-3px 4px 0px #f0f0f0,4px -3px 0px #0f00b2;
+        text-shadow:3px 3px 3px #2661d8,4px -3px 0px #0f00b2;
+        &:hover {
+    transform: scale(1.1);
     }
+}
 }
 
 
@@ -160,7 +183,6 @@ main {
 .sonic-speaks {
     width:300px;
     height:300px;
-    border: 3px solid black;
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -168,5 +190,8 @@ main {
 }
 
 .sonic-speaks:hover {
-    background-color: red;
+    transform:translateX(100px);
+    width:500px;
+    background-image: url("../img/jak-sie-masz2.png");
+    background-size:cover;
 }
